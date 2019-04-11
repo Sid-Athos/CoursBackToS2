@@ -6,7 +6,7 @@ if (isset($_GET['ym'])) {
     $ym = $_GET['ym'];
 } else {
     // This month
-    $ym = date('Y-m');
+    $ym = date('y-m'); // Moi je préfère les petits m. Y A QUOI?
 }
 // Check format
 $timestamp = strtotime($ym . '-01');  // the first day of the month
